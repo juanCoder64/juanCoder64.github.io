@@ -5,8 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sitio de juan</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+<style>
+    body{
+        margin:0;
+        font-family:'Press Start 2P',sans-serif;
+        color: white;
+        background: black;
+        overflow-x: hidden;
+    }
+    section{
+        position:relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 400px;
+        padding: 100px 20vw;
+    }
+
+    .one{
+        background: #051367;
+    }
+    .two{
+        background: #2D31FA;
+    }
+    .three{
+        background: #5D8BF4;
+    }
+    .curve{
+        position: absolute;
+        height: 225px;
+        width: 100%;
+        bottom: 0;
+    }
+    .curve::before{
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        background-color: #2D31FA;
+        transform: translate(85%, 60%);
+    }
+
+    .curve::after{
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        transform: translate(-4%, 40%);
+        background-color: #051367;
+        z-index: 1;
+    }
+    
+</style>
 </head>
+
 <body>
-    <h1>hola, no se para que hice este sitio XD</h1>
+    <section class="one">
+        <h1>hola</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, nihil consequuntur ullam explicabo eum aperiam corporis nesciunt optio fugit nulla sequi itaque aliquid obcaecati. Debitis quaerat error explicabo libero praesentium!</p>
+        <div class="custom-shape-divider-top-1646710511">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        </section>
+    <section class="two">
+        <h1>hola</h1>
+        <p>Qui pariatur corporis consequatur illo illum. Quaerat sapiente inventore velit laborum consequatur iusto. Numquam cumque possimus quasi ullam itaque, necessitatibus explicabo sunt velit eaque est. Minus unde cupiditate quibusdam laboriosam.</p>
+    </section>
+    <section class="three">
+        <h1>hola</h1>
+        <p>Error laboriosam corrupti nostrum enim non culpa voluptatem maiores? Quisquam inventore sint consequatur id dolore quaerat aperiam nemo voluptatum, optio enim earum reiciendis facilis iure dignissimos odio quia, maiores deserunt?</p>
+    </section>
 </body>
 </html>
